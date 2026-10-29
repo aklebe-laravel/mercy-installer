@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9eba5db5a0ff08e253bcd8ee156ed8bc",
+    "content-hash": "593b8a13330240be447075e03cdce1c8",
     "packages": [
         {
             "name": "aklebe-laravel/mercy-php-deployment",
-            "version": "dev-master",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aklebe-laravel/mercy-php-deployment.git",
-                "reference": "34dfcbf7f0712dd7acc084990fa400c14b37f280"
+                "reference": "325b09a46c0678be6ce0d16b28528a4b1893aff8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aklebe-laravel/mercy-php-deployment/zipball/34dfcbf7f0712dd7acc084990fa400c14b37f280",
-                "reference": "34dfcbf7f0712dd7acc084990fa400c14b37f280",
+                "url": "https://api.github.com/repos/aklebe-laravel/mercy-php-deployment/zipball/325b09a46c0678be6ce0d16b28528a4b1893aff8",
+                "reference": "325b09a46c0678be6ce0d16b28528a4b1893aff8",
                 "shasum": ""
             },
             "require": {
@@ -36,8 +36,12 @@
             "suggest": {
                 "ext-zip": "Needed to create a bundle (build_steps.create_bundle)."
             },
-            "default-branch": true,
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "AklebeLaravel\\MercyPhpDeployment\\": "src/"
@@ -52,7 +56,7 @@
                 "MIT"
             ],
             "description": "Isolated deployment for your main application.",
-            "time": "2026-10-29T07:34:42+00:00"
+            "time": "2026-10-29T09:50:33+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -2412,9 +2416,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "aklebe-laravel/mercy-php-deployment": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

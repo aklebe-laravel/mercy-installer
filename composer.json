@@ -1,0 +1,37 @@
+{
+    "name": "aklebe-laravel/mercy-installer",
+    "description": "Installer for the main application.",
+    "type": "library",
+    "license": "MIT",
+    "config": {
+        "platform": {
+            "php": "8.5.0"
+        },
+        "allow-plugins": {},
+        "preferred-install": {
+            "aklebe-laravel/*": "source",
+            "*": "dist"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/aklebe-laravel/mercy-php-deployment.git",
+            "no-api": true
+        }
+    ],
+    "require": {
+        "php": "^8.5",
+        "aklebe-laravel/mercy-php-deployment": "dev-master",
+        "illuminate/collections": "^13.0",
+        "illuminate/support": "^v13.11",
+        "symfony/yaml": "^v8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "MercyInstaller\\": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

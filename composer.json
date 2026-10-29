@@ -22,7 +22,7 @@
     ],
     "require": {
         "php": "^8.5",
-        "aklebe-laravel/mercy-php-deployment": "^2.0",
+        "aklebe-laravel/mercy-php-deployment": "^2.1",
         "illuminate/collections": "^13.0",
         "illuminate/support": "^v13.11",
         "symfony/yaml": "^v8.1"

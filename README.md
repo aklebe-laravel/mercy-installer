@@ -36,7 +36,7 @@ git clone <your-project-repo> project
 
 The installer uses the stage `prod`: `setup.yaml` → `prod.yaml` → `secrets.yaml` → `prod.secrets.yaml`,
 written to `storage/app/last-setup/setup.yaml` on every run (generated, do not edit).
-Show the result with `php mercy.php config`.
+Show the result with `./mercy config`.
 
 ## Install
 
@@ -53,8 +53,9 @@ Show the result with `php mercy.php config`.
 
 5) Run the installer
    ```
-   php mercy.php install
+   ./mercy install
    ```
+   (also `php mercy install`; tab completion like `./mercy install --instance=<tab>` only with `./mercy`)
 
 6) Follow the instructions
 7) _[optionally]_ Start ldap sync
@@ -82,7 +83,7 @@ so paths are the same on dev, on the production host and inside the container:
 | `compose.yaml`            | copied out of the image, it matches the image version                           |
 | `.env`                    | the env of the containers (generated, values you add by hand stay)              |
 
-Upgrading from the old layout (`install/config`, `install/templates`): run `php mercy.php update` once,
+Upgrading from the old layout (`install/config`, `install/templates`): run `./mercy update` once,
 it moves `install/config/.env` to `storage/app/last-setup/setup-production.env`. Then delete the `install` folder.
 
 ## Updates
@@ -91,7 +92,7 @@ it moves `install/config/.env` to `storage/app/last-setup/setup-production.env`.
 To switch to another release (or back), change it (commit it in the project repository, `git -C project pull`) and run:
 
 ```
-php mercy.php update
+./mercy update
 ```
 
 The update pulls that image, copies its release files and recalculates the env values (`APP_VERSION`,
@@ -102,10 +103,10 @@ Check what runs: `docker compose ps --format '{{.Service}} {{.Image}}'`.
 
 ```
 # containers, networks and volumes (the DATABASE) of this folder, images built here
-php mercy.php destroy
+./mercy destroy
 
 # also the pulled images (app image, mariadb, redis) and/or all files of the folder
-php mercy.php destroy --images --files
+./mercy destroy --images --files
 ```
 
 `destroy` uses the docker project name of the `.env` and asks you to type it. With `--files` it refuses

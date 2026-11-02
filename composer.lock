@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aklebe-laravel/mercy-php-deployment",
-            "version": "v2.3.4",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aklebe-laravel/mercy-php-deployment.git",
-                "reference": "233dd6bc389838dcb629adfd37792e73a9405333"
+                "reference": "14d93a5a51fe6445bd58762145cdf308b2b6bedf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aklebe-laravel/mercy-php-deployment/zipball/233dd6bc389838dcb629adfd37792e73a9405333",
-                "reference": "233dd6bc389838dcb629adfd37792e73a9405333",
+                "url": "https://api.github.com/repos/aklebe-laravel/mercy-php-deployment/zipball/14d93a5a51fe6445bd58762145cdf308b2b6bedf",
+                "reference": "14d93a5a51fe6445bd58762145cdf308b2b6bedf",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 "MIT"
             ],
             "description": "Isolated deployment for your main application.",
-            "time": "2026-10-31T10:05:24+00:00"
+            "time": "2026-11-02T03:57:54+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
